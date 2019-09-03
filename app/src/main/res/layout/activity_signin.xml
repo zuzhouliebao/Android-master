@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ba"
+    tools:context=".SigninActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="60dp"
+        android:paddingLeft="50dp"
+
+        android:paddingRight="50dp">
+
+        <ImageView
+
+            android:layout_width="85dp"
+            android:layout_height="82dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+
+
+            android:src="@drawable/spl"
+             />
+
+        <!-- User Label -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/shape"
+
+            >
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:src="@drawable/user" />
+            <EditText
+                android:id="@+id/user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+
+                android:hint="请输入用户名" />
+        </LinearLayout>
+        <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+            <item
+                android:left="-2dp"
+                android:right="-2dp"
+                android:top="-2dp">
+                <shape>
+                    <solid android:color="#ffffff"/>
+                    <stroke
+                        android:width="1dp"
+                        android:color="#ff0000"/>
+                </shape>
+            </item>
+        </layer-list>
+        <!-- Password Label -->
+        <LinearLayout
+            android:background="@drawable/shape"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:layout_marginBottom="8dp">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:src="@drawable/pass" />
+            <EditText android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="请输入密码"
+                />
+        </LinearLayout>
+
+        <Button
+        android:id="@+id/signin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+            android:background="@drawable/shape"
+
+
+
+            android:padding="12dp"
+        android:textSize="20dp"
+        android:text="登录"/>
+
+
+        <TextView
+            android:id="@+id/login_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:background="#00000000"
+            android:text="忘记密码"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="right|center"
+            android:background="#00000000"
+            android:layout_marginTop="-20dp"
+            android:text="注册"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+</LinearLayout>
